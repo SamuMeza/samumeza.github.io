@@ -1,0 +1,129 @@
+@media screen and (min-width: 720px) and (max-width: 1440px) {
+  /* Navegación */
+  .nav-list{
+    gap: 2em;
+    padding: 1em 0;
+  }
+
+  .link{
+    font-size: 1.05em;
+  }
+
+  /* Sección Inicio */
+  .main-container{
+    width: 35vw;
+    margin: 5em auto 0 auto;
+  }
+
+  .image-main-container{
+    width: 9em;
+    height: 9em;
+  }
+
+  .main-title{
+    font-size: 2em;
+  }
+
+  .sub-title-container{
+    width: 50vw;
+    font-size: 1.1em;
+  }
+
+  .arrow-container{
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 1.2em;
+  }
+
+  /* Sobre Mí */
+  .container-sobreMi{
+    padding-top: 1.5em;
+  }
+
+  .title-about{
+    font-size: 2.6em;
+    letter-spacing: .12em;
+  }
+
+  .about-container{
+    width: 60vw;
+    margin-top: 1.5em;
+  }
+
+  .about-container > p{
+    font-size: 2.2vh;
+    line-height: 1.4em;
+  }
+
+  .skills-container{
+    margin-top: .8em;
+  }
+
+  .skills-container > img{
+    width: 3.2em;
+    margin: .4em .4em 0;
+  }
+
+  /* Proyectos */
+  .container-proyectos{
+    padding: 3em 0 2.5em;
+  }
+
+  .title-proyectos{
+    font-size: 2.6em;
+  }
+
+  .projects-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1em;
+    margin-top: 1.5em;
+    overflow-x: auto; /* permitir scroll horizontal cuando overflow */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .card{
+    flex: 0 0 auto; /* no encoger, mantener ancho */
+    width: 28vw;
+    max-width: 420px;
+    min-width: 280px;
+  }
+
+  .card-image{
+    width: 95%;
+    height: auto;
+    padding-top: 56.25%; /* Mantener relación 16:9 */
+  }
+
+  .show-more{
+    display: none; /* en desktop no se usa el botón */
+  }
+
+  /* Contenido de la tarjeta en desktop */
+  .card-content{
+    padding: .4em .2em .6em;
+  }
+
+  .card-title{
+    margin-bottom: .2em;
+    text-align: left;
+  }
+
+  .card-summary{
+    color: #9AA7B2;
+    font-size: .95em;
+    line-height: 1.3em;
+  }
+
+  .link-project{
+    margin-top: .8em;
+  }
+
+  /* Footer */
+  .footer-container{
+    font-size: 1em;
+    padding: 1em 0.8em;
+  }
+}

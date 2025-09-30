@@ -1,0 +1,278 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  color: #E6EDF3;
+  width: 100%;
+  height: 100vh;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #0B0F14;
+}
+
+/* Estilos de la barra de navegacion */
+.nav-list{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: .7em 0;
+  background: #121821;
+  list-style: none;
+  z-index: 1;
+}
+
+.link{
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #22D3EE;
+}
+/*************/
+
+/* Estilos de la seccion de Inicio */
+.container-inicio, .container-sobreMi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0B0F14;
+  width: 100%;
+  height: 100dvh;
+  border-top: 1px solid #22d3ee26
+}
+
+.main-container{
+  margin: 3em auto 0 auto;
+  width: 45vw;
+}
+
+.image-main-container{
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  background: #121821;
+  margin: 0 auto;
+  border: 1px solid #22d3ee26;
+}
+
+.main-title{
+  margin: .5em 0 0;
+  text-align: center;
+  font-size: 1.2em;
+  color: #E6EDF3
+}
+
+.name{
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  color: #E6EDF3
+}
+
+.sub-title-container{
+  margin: 1em auto 0 auto;
+  text-align: center;
+  font-size: .94em;
+}
+
+.arrow-container{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #121821;
+  margin: 1em auto 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/*******************/
+
+/* Seccion De informacion personal */
+.title-about{
+  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: .1em;
+}
+
+.about-container{
+  width: 90vw;
+  color: hsl(0, 0%, 00%);
+  margin: 1.2em auto 0;
+}
+
+.skills-container{
+  margin: 0 auto .6em;
+  text-align: center;
+}
+/********************/
+
+/* Informacion de los Proyectos que he realizado */
+.container-proyectos{
+  background: #0B0F14;
+  width: 100%;
+  padding: 2em 0;
+  border-top: 1px solid #22d3ee26;
+}
+
+.title-proyectos{
+  text-align: center;
+  margin-top: .3em;
+  font-size: 2.2em;
+  letter-spacing: .1em;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  gap: .5em;
+  color: hsl(0, 0%, 80%);
+}
+
+.card{
+  background-color: #121821;
+  width: 70vw;
+  padding: 0 .3em .3em .3em;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .45)
+}
+
+.card-image{
+  margin: .5em auto .3em;
+  width: 95%;
+  height: 30vw;
+  padding-top: 56.25%;
+}
+
+.card-title { 
+  color: #E6EDF3; 
+}
+
+.show-more{
+  background: #121821;
+  color: #22D3EE;
+  border: none;
+  padding: .6em;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: .6em auto;
+}
+
+.link-project{
+  color: #22D3EE;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: .6em;
+}
+
+/*****************************/
+
+/* Estilos del Footer */
+.footer-container{
+  background: #121821;
+  width: 100%;
+  padding: .6em;
+  text-align: center;
+  font-size: .9em;
+  color: #E6EDF3;
+}
+
+.personal-link{
+  color: #22D3EE;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/**********************/
+
+/* Estilos por especificidad */
+.link:hover, .link:focus-visible{
+  color: #0891B2;
+  text-decoration: underline;
+}
+
+.about-container > p{
+  font-size: 2.5vh;
+  line-height: 1.2em;
+  color: #9AA7B2;
+}
+
+.skills-container > img{
+  width: 2.6em;
+  margin: .5em 0 0;
+}
+
+.personal-link:hover { 
+  color: #0891B2; 
+}
+
+.personal-link:active{
+  color: hsl(207, 91%, 29%);
+  text-decoration: underline;
+}
+
+.projects-container > .card:nth-child(1) > .card-image{
+  background-image: url("../src/project-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-container > .card:nth-child(2) > .card-image{
+  background-image: url("../src/project-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-container > .card:nth-child(3) > .card-image{
+  background-image: url("../src/project-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.show-more:hover{
+  background: #0891B2;
+  color: #0B0F14;
+}
+
+.name:hover{
+  text-shadow: 0 0 12px #22d3ee73;
+}
+
+ /* Icono de flecha (hacia abajo) */
+.arrow-container::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid #22D3EE;
+  border-bottom: 3px solid #22D3EE;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.arrow-container:active{
+  background: #0891B2;
+}
+
+.arrow-container:active::before{
+  border-right: 3px solid #22d3eee0;
+  border-bottom: 3px solid #22d3eee0;
+} 
