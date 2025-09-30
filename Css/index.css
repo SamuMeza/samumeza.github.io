@@ -70,6 +70,9 @@ body{
   background: #121821;
   margin: 0 auto;
   border: 1px solid #22d3ee26;
+  background-image: url("../src/avatar.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-title{
